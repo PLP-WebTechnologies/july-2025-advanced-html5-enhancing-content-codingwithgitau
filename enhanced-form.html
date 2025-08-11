@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My HTML5 Showcase</title>
+</head>
+<body>
+    <header>
+        <h1>My HTML5 Showcase</h1>
+        <p>Demonstrating lists, tables, media, and a fully validated HTML5 form.</p>
+    </header>
+
+    <!-- Lists Section -->
+    <section>
+        <h2>Languages I Know</h2>
+        <ul>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>C++</li>
+        </ul>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+        <h2>Course Schedule</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Topic</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>HTML & CSS</td>
+                    <td>2 hours</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>JavaScript Basics</td>
+                    <td>2 hours</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+        <h2>Featured Video</h2>
+        <video width="320" height="240" controls>
+            <source src="media/He_Knows_My_Name.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fullname">Full Name:</label>
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    required
+                    minlength="3"
+                    placeholder="John Doe"
+                />
+
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="example@email.com"
+                />
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required />
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required minlength="5" />
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="8" />
+
+                <label for="confirm">Confirm Password:</label>
+                <input type="password" id="confirm" name="confirm" required minlength="8" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+
+                <label>
+                    <input type="radio" name="subscription" value="free" required />
+                    Free Plan
+                </label>
+                <label>
+                    <input type="radio" name="subscription" value="premium" />
+                    Premium Plan
+                </label>
+
+                <label for="interests">Select Interests:</label>
+                <select id="interests" name="interests" required>
+                    <option value="">--Please choose--</option>
+                    <option value="coding">Coding</option>
+                    <option value="design">Design</option>
+                    <option value="marketing">Marketing</option>
+                </select>
+            </fieldset>
+
+            <input type="submit" value="Register" />
+        </form>
+    </section>
+</body>
+</html>
